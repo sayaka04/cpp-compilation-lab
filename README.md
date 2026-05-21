@@ -58,12 +58,23 @@ src/
 
 ---
 
+Got it — you want the Markdown to show both options clearly.
+
+Here is the clean fixed version:
+
+
 # 🧪 Build / Compile Command
 
 Run this from the project root:
 
 ```bash
 g++ src/main.cpp src/game.cpp -o bin/game.exe -Iglfw/include -Lglfw/lib-mingw-w64 -lglfw3dll -lopengl32
+````
+
+OR (no console window / GUI only):
+
+```bash
+g++ src/main.cpp src/game.cpp -o bin/game.exe -Iglfw/include -Lglfw/lib-mingw-w64 -lglfw3dll -lopengl32 -mwindows
 ```
 
 ---
@@ -222,7 +233,3 @@ This project exists to understand:
 - how runtime dependencies (DLLs) affect execution
 
 It is a **C++ toolchain and build system learning environment**.
-
-```
-
-```

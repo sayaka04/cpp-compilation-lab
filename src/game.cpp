@@ -24,7 +24,7 @@ void Game::run()
     // FULLSCREEN WINDOW (1920x1080)
     GLFWwindow *window = glfwCreateWindow(
         1920, 1080,
-        "My First GLFW Game",
+        "GLFW Game Foundation Demo",
         glfwGetPrimaryMonitor(),
         NULL);
 
